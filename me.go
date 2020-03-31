@@ -2,17 +2,17 @@ package gozaim
 
 // Me ユーザ情報
 type Me struct {
-	ID              int
-	Login           string
-	Name            string
-	InputCount      int
-	DayCount        int
-	RepeatCount     int
-	Day             int
-	Week            int
-	Month           int
-	CurrencyCode    string
-	ProfileImageURL string
-	CoverImageURL   string
-	ProfileModified string
+	ID              int    `json:"id"`
+	Login           string `json:"login"`
+	Name            string `json:"name"`
+	InputCount      int    `json:"input_count"`
+	DayCount        int    `json:"day_count"`
+	RepeatCount     int    `json:"repeat_count"`
+	Day             int    `json:"day"`
+	Week            int    `json:"week"`
+	Month           int    `json:"month"`
+	CurrencyCode    string `json:"currency_code"`
+	ProfileImageURL string `json:"profile_image_url"`
+	CoverImageURL   string `json:"cover_image_url"`
+	ProfileModified string `json:"profile_modified"`
 }
